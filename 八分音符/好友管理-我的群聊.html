@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的群聊</title>
+    <link rel="stylesheet" href="框架.css">
+
+</head>
+<body>
+<style>
+
+    table{
+        background-color: #caa36d;
+        border: 0.5px solid #366632;
+        border-collapse: collapse;
+        margin: 10px;
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        font-size:16px;
+    }
+    td{
+        border:none;
+
+    }
+    tr{
+        /*vertical-align: top;*/
+        /*vertical-align: bottom;*/
+        vertical-align: middle;
+        border:1px solid #366632;
+
+    }
+</style>
+<!--页面-->
+<div class="container">
+    <!--1.头部-->
+    <div class="header">
+
+        <!--主导航-->
+        <nav class="mainnav">
+            <ul>
+                <li><a href="#"> <img src="images/logo.png" alt="logo" width="60" hight="60"/></a></li><!--logo-->
+                <li><a href="个人信息页面.html">个人信息</a></li>
+                <li><a href="#">我的练习</a></li>
+                <li><a href="#">好友管理</a></li>
+                <li><a href="#">找谱子</a></li>
+                <li><a href="#">交流社区</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <!--2.主体-->
+    <div class="content">
+        <!--侧栏-->
+        <div class="leftsider">
+            <ul>
+                <li><a href="好友管理-我的好友.html">我的好友</a></li>
+                <li><a href="好友管理-添加好友.html">添加好友</a></li>
+                <li><a href="好友管理-创建群聊.html">创建群聊</a></li>
+                <li><a href="好友管理-我的群聊.html">我的群聊</a></li>
+            </ul>
+        </div>
+        <!--内容区-->
+
+        <div  margin="0 auto" align="center" class="box">
+            <table>
+                <tr>
+                    <td>群聊1</td>
+                    <td><input style="width:100px;height:30px;" type="button" value="查看" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="聊天" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="退出群聊" ></td>
+                </tr>
+                <tr>
+                    <td>群聊2</td>
+                    <td><input style="width:100px;height:30px;" type="button" value="查看" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="聊天" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="退出群聊" ></td>
+                </tr>
+                <tr>
+                    <td>群聊3</td>
+                    <td><input style="width:100px;height:30px;" type="button" value="查看" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="聊天" ></td>
+                    <td><input style="width:100px;height:30px;" type="button" value="退出群聊" ></td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的练习</title>
+    <link rel="stylesheet" href="框架.css">
+
+</head>
+<body>
+<style>
+    select{
+    width: 150px;
+    height: 30px;
+    background: #f8ede1;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    font-size: 18px;
+    font-family: Microsoft YaHei, Microsoft YaHei-Normal;
+    font-weight: Normal;
+    text-align: center;
+    color: #777777;
+    line-height: 20px;
+    }
+</style>
+    <!--页面-->
+    <div class="container">
+        <!--1.头部-->
+        <div class="header">
+            <!--主导航-->
+            <nav class="mainnav">
+                <ul>
+                    <li><a href="#"> <img src="images/logo.png" alt="logo" width="60" hight="60"/></a></li><!--logo-->
+                    <li><a href="个人信息页面.html">个人信息</a></li>
+                    <li><a href="#">我的练习</a></li>
+                    <li><a href="#">好友管理</a></li>
+                    <li><a href="#">找谱子</a></li>
+                    <li><a href="#">交流社区</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!--2.主体-->
+        <div class="content">
+            <!--侧栏-->
+            <div class="leftsider">
+                <ul>
+                    <li><a href="#">找人一起练</a></li>
+                    <li><a href="#">我的好友</a></li>
+                    <li><a href="#">添加好友</a></li>
+                    <li><a href="#">练习打卡</a></li>
+                </ul>
+            </div>
+            <!--内容区-->
+
+            <div  margin="0 auto" align="center" class="box">
+                <br>
+                <br>
+                <lable for="level">您想寻找的好友水平大致为：</lable>
+                <select id="level" width="100">
+                    <option value="low">较差</option>
+                    <option value="ordinary">一般</option>
+                    <option value="good">较好</option>
+                </select><br>
+                <br>
+                <lable for="time">您想寻找的好友每天的练习时长为：</lable>
+                <select id="time" width="100">
+                    <option value="few">1h以下</option>
+                    <option value="common">1h-2h</option>
+                    <option value="many">2h以上</option>
+                </select><br>
+                <br>
+                <br>
+                <input style="width:100px;height:30px;" type="button" value="确认" >
+
+
+            </div>
+    </div>
+</body>
+</html>

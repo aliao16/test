@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息页面</title>
+    <style>
+        p{
+            line-height: 1.5em;
+            margin: 20px 0;
+            font-size:24px;
+        }
+
+        input{
+            width:180px;
+            height:30px;
+        }
+        lable{
+            width: 216px;
+            height: 30px;
+            font-size: 24px;
+            font-weight: Normal;
+            text-align: left;
+            color: #000000;
+            line-height: 6px;
+        }
+        select{
+            width: 150px;
+            height: 30px;
+            background: #f8ede1;
+            border: 1px solid #777777;
+            border-radius: 2px;
+            font-size: 18px;
+            font-family: Microsoft YaHei, Microsoft YaHei-Normal;
+            font-weight: Normal;
+            text-align: center;
+            color: #777777;
+            line-height: 20px;
+        }
+
+        body{
+            position: absolute;
+            left: 90%;
+            top: 30%;
+            margin-left:-50%;
+            margin-top:-10%;
+            background: url(images/背景.jpg) no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#">
+
+    <div  margin="0 auto" align="center" class="box">
+        <p>修改昵称：
+            <input type="text"
+                   style=""
+                   name="昵称" placeholder="请设置您的昵称："  minlength="" maxlength=""></p>
+        <p>修改密码：
+            <input type="password"
+                   style=""
+                   name="密码" placeholder="请设置您的密码："  minlength="" maxlength=""></p>
+        <p>重新设置以下内容：</p>
+        <lable for="instrument">您学习的乐器是：</lable>
+        <select align="center" id="instrument" width="100">
+            <option value="guitar" >吉他</option>
+            <option value="piano">钢琴</option>
+            <option value="drum">架子鼓</option>
+        </select><br>
+        <br>
+        <lable for="level">您的水平大致为：</lable>
+        <select id="level" width="100">
+            <option value="low">较差</option>
+            <option value="ordinary">一般</option>
+            <option value="good">较好</option>
+        </select><br>
+        <br>
+        <lable for="time">您每天的练习时长为：</lable>
+        <select id="time" width="100">
+            <option value="few">1h以下</option>
+            <option value="common">1h-2h</option>
+            <option value="many">2h以上</option>
+        </select><br>
+        <br>
+        <br>
+        <input style="width:100px;height:30px;" type="button" value="取消" >
+        <input style="width:100px;height:30px;" type="button" value="保存" >
+    </div>
+</form>
+</body>
+</html>

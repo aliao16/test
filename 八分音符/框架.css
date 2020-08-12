@@ -1,0 +1,73 @@
+/*初始化样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/*设置页面样式*/
+body{
+    font-size: 24px;
+    background-color:#FDF3F0;
+}
+/*页面总样式*/
+.container{
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+/*页首*/
+.header{
+    padding-bottom: 15px;
+    background: url(images/横栏.jpg) no-repeat /*水平排列*/ left bottom;
+}
+.mainnav ul{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 9px 0 8px 0;
+    margin-left: 30px;
+}
+.mainnav ul li{
+    display: inline-block;
+    padding: 0 20px 0 18px;
+    border-right: 2px solid #498829;
+}
+.mainnav ul li:last-child{/*最后一个分割线不要*/
+    border:none;
+}
+.mainnav ul li:first-child { /*第一个分割线不要*/
+    border: none;
+}
+.mainnav ul li a{
+    font-size: 36px;
+    color: #000000;/*横导航栏*/
+}
+.mainnav ul li a:hover{
+    color: #ff0;/*鼠标移到横导航栏的颜色*/
+}
+/*主体*/
+.content{
+    overflow: hidden;
+}
+/*侧栏*/
+.leftsider{
+    float: left;
+    width: 210px;
+    border: 1px solid #000000;
+    background: url(images/侧栏.jpg) ;
+}
+.leftsider ul{
+    padding-left: 50px;
+}
+.leftsider ul li{
+    padding: 9px 0 7px;
+}
+.leftsider ul li a:hover{
+    color: #5dff2f;
+}
+/*内容区*/
